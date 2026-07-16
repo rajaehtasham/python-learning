@@ -1,7 +1,7 @@
 def decorator_func(orig_func):
-    def wrapper_func(*args,**kwargs):
+    def wrapper_func(*ar,**a):
         print("Wrapper executed this before {}".format(orig_func.__name__))
-        return orig_func(*args,**kwargs)
+        return orig_func(*ar,**a)
     return wrapper_func
 
 @decorator_func

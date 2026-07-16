@@ -1,8 +1,6 @@
 def decorator_func(orig_func):
-    def wrapper_func(*args,**kwargs):
-        print("Wrapper executed this before {}".format(orig_func.__name__))
-        return orig_func(*args,**kwargs)
-    return wrapper_func
+    def wrapper_func():
+        return wrapper_func
 
 class Class_decorator(object):
     def __init__(self,orig_func):
